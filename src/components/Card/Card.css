@@ -1,0 +1,24 @@
+.click-item {
+    height: 170px;
+    width: 170px;
+    margin: 8px 25px;
+    border: 5px solid #f1f1f1;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.neutral {
+    background-color: pink;
+}
+
+.click-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    transition: .1s;
+}
+
+.card-image {
+    max-height: 160px;
+    max-width: 160px;
+}

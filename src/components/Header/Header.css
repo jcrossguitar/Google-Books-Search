@@ -1,0 +1,37 @@
+.header {
+  background-color: #2c323c;
+  background-image: url(../../assets/images/burger.svg);
+  background-repeat: repeat;
+  background-size: 8%;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-height: 100px;
+  animation: animatedBackground 3s linear infinite;
+  border-bottom: 5px solid black;
+}
+
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 0 100%; }
+}
+
+.logo-button {
+ width: 100%;
+  padding: 0;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.logo-button:hover{
+  background-color: black;
+  border: 1px solid black;
+}
+
+#popover-positioned-left {
+  max-width: 200px;
+}
+
+.bobs-burgers {
+  width: 100%;
+}

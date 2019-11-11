@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "count": 0,
+		"name": "Tina",
+    "image": "./images/tina.gif"
+  },
+
+  {
+    "id": 2,
+    "count": 0,
+		"name": "Linda",
+    "image": "./images/linda.png"
+  },
+  {
+    "id": 3,
+    "count": 0,
+		"name": "Bob",
+    "image": "./images/bob.png"
+  },
+  {
+    "id": 4,
+    "count": 0,
+		"name": "Jimmy",
+    "image": "./images/jimmy.png"
+  },
+  {
+    "id": 5,
+    "count": 0,
+		"name": "Louise",
+    "image": "./images/louise.png"
+  },
+  {
+    "id": 6,
+    "count": 0,
+		"name": "Teddy",
+    "image": "./images/teddy.png"
+  },
+  {
+    "id": 7,
+    "count": 0,
+		"name": "Al",
+    "image": "./images/al.png"
+  },
+  {
+    "id": 8,
+    "count": 0,
+		"name": "Gloria",
+    "image": "./images/gloria.png"
+  },
+  {
+    "id": 9,
+    "count": 0,
+		"name": "Calvin",
+    "image": "./images/calvin.png"
+  },
+  {
+    "id": 10,
+    "count": 0,
+		"name": "Tammy",
+    "image": "./images/tammy.png"
+  },
+  {
+    "id": 11,
+    "count": 0,
+		"name": "Gene",
+    "image": "./images/gene.gif"
+  },
+  {
+    "id": 12,
+    "count": 0,
+		"name": "Choo-Choo",
+    "image": "./images/choo.png"
+  }
+] 

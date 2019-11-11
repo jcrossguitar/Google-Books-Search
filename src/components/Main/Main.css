@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    width: 75%;
+    position: relative;
+}
+
+.gif img, .btn-link {
+  position: absolute;
+}
+
+.btn-link {
+  top: 50%;
+  left: 5%;
+}
+
+.volume-icon {
+  height: 100px;
+
+  color: #5bc0de;
+}
+
+#louise-gif {
+  max-height: 300px;
+  top: 89.5%;
+  right: 0;
+}
+
+#linda-gif {
+  max-width: 200px;
+  top: 72%;
+  left: 0;
+}
+
+.incorrect {
+  animation: shake 0.82s;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+.off {
+  display: block;
+}
+
+.on {
+  display: none;
+}
+
+/* .btn-link, .volume-icon {
+  position: absolute;
+  left: 5%;
+} */
+  
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-20px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+.incorrect img{
+  display:none;
+}
+
+@media only screen and (max-width: 1300px) {
+  .gif {
+    display: none;
+  }
+}
