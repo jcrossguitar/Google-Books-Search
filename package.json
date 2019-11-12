@@ -1,28 +1,45 @@
 {
-  "name": "reactpractice",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "install": "^0.13.0",
-    "mongoose": "^5.7.10",
-    "nodemon": "^1.19.4",
-    "npm": "^6.12.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
-  },
+  "name": "google-books-search",
+  "version": "1.0.0",
+  "description": "A React-based Google Books Search app. Create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. Use Node, Express and MongoDB so that users can save books to review or purchase later.",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcrossguitar/Google-Books-Search.git"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcrossguitar/Google-Books-Search/issues"
+  },
+  "homepage": "https://github.com/jcrossguitar/Google-Books-Search#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "@sentry/browser": "^4.5.2",
+    "axios": "^0.18.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.7.10"
   },
   "browserslist": {
     "production": [
